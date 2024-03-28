@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+.container{
+	display:flex;
+	margin:20px;
+	width:90%;
+	border:2px solid black;
+}
+
+.c1{
+height:300px;
+justify-content:center;
+align-items:flex-end;
+}
+
+.c2{
+height:300px;
+justify-content:flex-start;
+align-items:self-end;
+}
+
+.c3{
+height:300px;
+justify-content:flex-end;
+align-items:stretch;
+}
+
+
+.c4{
+justify-content:space-between;
+align-items:center;
+}
+
+.c5{
+justify-content:space-around;
+align-items:center;
+}
+
+.box{
+	height:190px;
+	width:150px;
+	margin:20px;
+	background-color:lightblue;
+}
+.small{
+height:10px; width:150px;
+	margin:20px;
+	background-color:lightblue;
+	}
+</style>
+
+<body>
+
+<div class="container c1">
+
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+<div class="box">Box 4</div>
+
+</div>
+
+<div class="container c2">
+
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+<div class="box">Box 4</div>
+
+</div>
+
+<div class="container c3">
+
+<div class="box">Box 1</div>
+<div   class="small">Box 2</div>
+<div class="box">Box 3</div>
+<div class="box">Box 4</div>
+
+</div>
+
+<div class="container c4">
+
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+<div class="box">Box 4</div>
+
+</div>
+
+<div class="container c5">
+
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+<div class="box">Box 4</div>
+
+</div>
+</body>

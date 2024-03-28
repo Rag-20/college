@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+div{margin:20px;}
+
+.inline{
+	display:inline;
+	border: 2px solid red;
+	}
+	
+.inline-block{
+	display:inline-block;
+	border: 2px solid red;
+	width:20%;
+	}
+	
+.block{
+	display:block;
+	border: 2px solid red;
+	width:20%;
+	}
+	
+.flex{
+	display:flex;
+	border: 2px solid red;
+	width:20%}
+	
+</style>
+<body>
+
+<div class="inline">
+<span>this is inline(width is fixed according to content and no line break)</span>
+</div>
+
+<div class="inline-block">
+<p>this is inline-block<br>(inherits the property of both inline and block)<br>(width can be set and no line break and defaul is acc to content</p>
+</div>
+
+<div class="block">
+<p>this is block(can set the width but line break is given</p>
+</div>
+<div class="inline">
+<span>this is inline(width is fixed according to content and no line break)</span>
+</div>
+
+
+<div class="flex">
+<p>this is flex(acts as block with many flexbox properties)</p>
+</div>
+</body>

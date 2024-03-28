@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<style>
+*{
+margin:0px;
+box-style:border-box;
+}
+
+body{
+background-image:url("tulip.jpg");
+background-size: cover;
+width:100%;
+height:100%
+}
+
+.tint{
+position:absolute;
+background-color:rgba(0,0,0,0.6);
+width:100%;
+height:100%;
+}
+
+a{
+padding:10px;
+color:white;
+}
+
+.navbar{
+padding:10px;
+background-color: rgba(0,0,0,0.4);
+}
+
+div.right{
+display: inline-block;
+float: right;
+}
+
+div.center{
+position:relative;
+transform: translate(0%,300%);
+}
+
+.b,h1{
+display:flex;
+justify-content:center;
+}
+
+
+.button{
+display:inline-block;
+padding:10px;
+width:80px;
+height:20px;
+margin:0px 10px;
+border:2px solid orange;
+border-radius:20px;
+text-align:center;	
+text-decoration:none;
+}
+
+a.button:hover{
+background-color:orange;
+}
+</style>
+
+<body>
+<div class="tint">
+<div class="navbar">
+<a id="left">hi</a>
+<div class="right">
+<a href="">home</a>
+<a href="">Services</a>
+<a href="">Gallery</a>
+<a href="">Review</a>
+</div>
+</div>
+
+<div class="center">
+<h1 style="color:white; padding-bottom:15px;">THE CREATIVE WORLD</h1>
+
+<div class="b">
+<a class="button" href="">Contact</a>
+<a class="button" href="">Explore</a>
+</div>
+</div>
+</div>
+
+</body>
+
+</html>

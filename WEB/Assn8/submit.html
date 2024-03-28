@@ -1,0 +1,113 @@
+<!DOCUMENT html>
+<html>
+<style>
+.container{
+border: 2px solid black;
+margin: 40px;
+padding:20px;}
+
+.lal{
+text-align:center;
+font-size:20px
+}
+
+legend{
+font-weight:bold;
+}
+
+fieldset{
+border: 2px solid black;
+}
+
+.ho:hover{
+background-color:grey;
+}
+</style>
+<body style="background-image:url('tulip.jpg');">
+<form>
+<div class=container>
+<p class=lal><b>Admission Form</b></p>
+<br>
+<fieldset form>
+<legend>Personal Information</legend>
+<label>Name *</label>
+<input type="textbox" required>
+<br><br>
+
+<label for="textarea">Address *</label>
+<textarea style="vertical-align:middle;" id="textarea" rows="3" cols="15" required></textarea>
+
+<br><br>
+<label>Phone No. *</label>
+<input type="number" required>
+<br><br>
+<label>Date Of Birth *</label>
+<input type="date" required>
+<br><br>
+<label>Gender *</label>
+<input type="radio" id="gender1" name="gender" required>Male</input>
+<input type="radio" id="gender2" name="gender" required>Female</input>
+<input type="radio" id="gender3" name="gender" required>Others</input>
+<br><br>
+</fieldset form>
+<br><br>
+
+<fieldset form>
+<legend>Educational information</legend>
+<br><br>
+
+<select required>
+<option value="PG" id="d" name="degree" >--Select an option--</option>
+<option value="UG" id="d1" name="degree" >UG</option>
+<option value="PG" id="d2" name="degree" >PG</option>
+</select>
+<label>&nbsp &nbsp &nbsp University *</label>
+<input type="text" required>
+<label>&nbsp &nbsp &nbsp CGPA *</label>
+<input type="number" required>
+<br><br>
+
+<select>
+<option value="PG" id="d" name="degree" >--Select an option--</option>
+<option value="UG" id="d1" name="degree">UG</option>
+<option value="PG" id="d2" name="degree">PG</option>\
+</select>
+<label>&nbsp &nbsp &nbsp University</label>
+<input type="text">
+<label>&nbsp &nbsp &nbsp CGPA</label>
+<input type="number">
+<br>
+<br>
+
+</fieldset form>
+<br><br>
+<fieldset form>
+<legend>Declaration</legend>
+<input id="ck" type="checkbox" style="width:20px; height:20px; vertical-align:middle;" required>
+<label for "ck"><b>I agree that all the information entered by me is valid and if there will be any mistakes I am solemnly responsible to the legal actions</b></label>
+
+</fieldset form>
+<br>
+<div style="text-align:center;">
+<input class=ho type="submit" id="submit" style="width:7%; font-weight:bold; border:2px solid black;   ">
+<input class=ho type="reset"  style="width:7%; font-weight:bold; border:2px solid black;  ">
+</div>
+</form>
+
+<script>
+const subm = document.getElementById("submit");
+subm.addEventListener("click",verify);
+
+function verify(){
+if(confirm("Submit the Form??")==true)
+{
+alert("Form submitted succesfully");
+}
+else
+{
+alert("Please recheck the form before submitting");
+}
+}
+</script>
+</body>
+</html>

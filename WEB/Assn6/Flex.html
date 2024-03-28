@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+.container{
+	display:flex;
+	margin:20px;
+	width:90%;
+	border:2px solid black;
+}
+
+.c1{
+flex-flow:row wrap;
+
+}
+
+.c2{
+flex-flow:row-reverse wrap;
+}
+
+.c3{
+flex-flow:column wrap;
+height:500px;
+}
+
+.c4{
+flex-flow:column-reverse wrap-reverse;
+height:150vh;
+}
+
+.box{
+	height:190px;
+	width:150px;
+	margin:20px;
+	background-color:lightblue;
+}
+</style>
+
+<body>
+
+<div class="container c1">
+
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+<div class="box">Box 4</div>
+
+</div>
+
+<div class="container c2">
+
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+<div class="box">Box 4</div>
+
+</div>
+
+<div class="container c3">
+
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+<div class="box">Box 4</div>
+
+</div>
+
+<div class="container c4">
+
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+<div class="box">Box 4</div>
+
+</div>
+</body>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<style>
+*{
+box-sizing:border-box;
+}
+form{
+box-shadow:10px 10px 10px grey;
+margin:20% 25%;
+padding:30px;
+background-color:lightblue;
+width:50%;
+}
+
+div{
+display:inline-block;
+}
+
+label.len{
+text-shadow:3px 3px 2px grey;
+display:inline-block;
+width:120px;
+padding:10px;
+}
+
+input{
+margin:5px 0px;
+}
+
+.L{
+padding:10px 20px;
+margin-top:20px;	
+margin-left:100px;
+border-radius:10px;
+background-color:seagreen;
+}
+</style>
+
+<body>
+<form>
+<label class="len">Member Name</label>
+<input type="text" required>
+<br>
+<label class="len">Contact No.</label>
+<input type="number" required>
+<br>
+<label for "div" class="len">Plan</label>
+
+<div  name="div" style="vertical-align:middle;">
+<input id="1" type="radio" name="plan" required>Silver(350rs for 1 month)</input>
+<br>
+<input id="2" type="radio" name="plan" required>Gold(600rs for 2 months)</input>
+<br>
+<input id="3" type="radio" name="plan" required>Platinum(1300rs for 5 months)</input>
+
+</div>
+<br>
+
+
+<input type="button" class="L" id="calculate" value="Calculate">
+<button  class="L" id="reset" >Reset</button>
+<br>
+<marquee>Discounts: Platinum:30% on total bill &nbsp   Gold:20% on total bill  &nbsp  Silver:10% on total bill</marquee>
+
+<label for "amount" class="len">Total Bill</label>
+<span name="amount" type="text" id="amount" ></span>
+<br>
+</form>
+
+<script>
+function bill(x,y){
+	x-=x*(y/100);
+	return x;
+}
+const output = document.getElementById("calculate");
+const display = document.getElementById("amount");
+
+output.addEventListener("click",calc);
+function calc(){
+console.log("hi")
+const value = document.querySelector("input[name='plan']:checked");
+if(value.id=="1"){
+	x = bill(350,10);
+	console.log(x);
+	display.innerHTML = x;
+}
+else if(value.id=="1"){
+	x = bill(600,20);
+	console.log(x);
+	display.innerHTML = x;
+}
+else{
+	x = bill(1300,30);
+	console.log(x);
+	display.innerHTML = x;
+}
+};
+</script>
+
+</body>
+</html>

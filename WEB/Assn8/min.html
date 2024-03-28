@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+<h1>the entered numbers are:-</h1>
+<p id="array"></p>
+<h1>The maximum is</h1>
+<p id="max"></p>
+<h1>The minimum is</h1>
+<p id="min"></p>
+
+
+</form>
+</body>
+
+<script>
+let len = prompt("How many numbers are you going to enter?","2");
+
+let arr=[];
+
+for(i=0;i<len;i++)
+{
+let k = prompt("Enter the number","0")
+arr.push(k);
+}
+
+let n = arr.length;
+let min,max;
+temp = arr[0];
+
+for(i=1;i<n;i++)
+{
+min = Math.min(temp,arr[i]);
+temp = min;
+}
+temp = arr[0];
+for(i=1;i<n;i++)
+{
+max = Math.max(temp,arr[i]);
+temp = max;
+}
+
+document.getElementById("array").innerHTML = arr;
+document.getElementById("max").innerHTML = max;
+document.getElementById("min").innerHTML = min;
+console.log(max);
+console.log(min);
+</script>

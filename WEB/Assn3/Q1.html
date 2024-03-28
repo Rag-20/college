@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Embedding audio and video etc</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Audio Clip:-</h1>
+    <audio controls src="office.mp3"></audio>
+
+    <h1>Video clip:-</h1>
+    <video controls width="400" src="video.mp4"></video>
+
+    <h1>Progress bar:-</h1>
+    <label for="file">Downloading:</label>
+    <progress class="file" value="30" max="100">30%</progress>
+    <br>
+    <label for="file">Downloading:</label>
+    <progress class="file" value="40" max="100">40%</progress>
+
+    <h1>Meter:-</h1>
+    <meter class="col" value="50" max="100" min="0" low="45" high="85"></meter>
+    <br>
+    <meter class="col" value="60" max="100" min="0" low="45" high="85"></meter>
+
+    <h1>Difference:-</h1>
+    <p>
+        We can say that they both have a semantic difference, but more than that there is a logical difference on when to use meter and progress.
+        <br>1.Meter tag is used when there should be a logical/fractional/indication is to be presented 
+        <br>for ex.Disk space,memory consumption(it changes colour according to mentioned max min values)
+        <br>2.Progress tag is mostly used when one has to show the accomplishment of certain task <br>for ex.DOwnload in progress
+    </p>
+
+    <h1>Description list:-</h1>
+    <dt>Progress</dt>
+    <dd>max:-Specifies how much work the task requires in total. Default:- 1</dd>
+    <dd>value:-Specifies how much of the task has been completed</dd>
+    
+    <dt>Meter</dt>
+    <dd>high:-Specifies the range that is considered to be a high value</dd>
+    <dd>low:-Specifies the range that is considered to be a low value</dd>
+    <dd>max:-Specifies the maximum value of the range</dd>
+    <dd>min:-Specifies the minimum value of the range. Default:-0</dd>
+    <dd>value:-Required field.Specifies the current value of the gauge</dd>
+
+    <h1>Datalist:-</h1>
+    
+    <input list="course" placeholder="Computer Courses" >
+    <datalist id="course" >
+        <option value="Computer Application">
+        <option value="IMCA">
+        <option value="Software">
+        <option value="C lang">
+        <option value="C#">
+    </datalist>
+
+    <h1>Difference between datalist & dropdown list:-</h1>
+    <p>The datalist tag specifies a list of pre-defined options for an input element.The datalist element's id attribute must be equal to the input element's list attribute</p>
+    <p>The select element is used to create a drop-down list.
+        The select element is most often used in a form, to collect user input.
+        
+        The id attribute is needed to associate the drop-down list with a label.</p>
+
+   
+</body>
+</html>

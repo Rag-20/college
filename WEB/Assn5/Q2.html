@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Header</title>
+    <style>
+      body {
+        background-color: rgb(195, 234, 244);
+      }
+		
+	  p{
+		text-indent:20px;
+		text-align:justify;
+	  }	  
+      
+	  #firstline::first-line{
+			color:red
+	  }
+	  
+	  #firstline::first-letter{
+			color:green;
+			font-size:30px
+			}
+	  
+	  header {
+        text-align: center;
+        border: 2px solid rgb(19, 25, 198);
+        background-color: rgba(90, 160, 240, 0.42);
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+
+      article {
+	  display:inline-block;
+	  width:50%;
+        margin: 10px;
+        background-color: rgb(232, 229, 224);
+        border-radius: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      aside {
+        display:inline-block;
+        width:25%;
+        background-color: beige;
+        border-radius: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 10px 20px;
+		vertical-align:top;
+      }
+
+      footer {
+        text-align: center;
+        border: 2px solid rgb(19, 25, 198);
+        background-color: rgba(90, 160, 240, 0.42);
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+	  
+	  img{
+	  height:70px;
+	  width:70px;
+	  border-radius:50%;
+	  }
+	  
+	  .h::before{
+		display:inline-block;
+		content:'';
+		background:url("tulip.jpg")  no-repeat;
+		background-size: 60px 60px;
+		width:60px;
+		height:60px;
+		border-radius:50%;
+		vertical-align:middle;
+	  }
+	  
+	  .h::after{
+		display:inline-block;
+		content:'';
+		background:url("tulip.jpg")  no-repeat ;
+		background-size: 60px 60px;
+		width:60px;
+		height:60px;
+		border-radius:50%;
+		vertical-align:middle;
+		}
+	  
+	  a{
+		text-decoration: none;
+		color:black;
+		}
+		
+
+		
+		h4:hover{
+			font-size:30px;
+			transition: font-size 2s ease;
+ 			}
+			
+			
+			@media (max-width:380px){
+					body{
+						background-color:red;
+					}
+
+				}
+		
+    </style>
+ 
+ </head>
+  <body>
+    <header>
+      <h1 class="h">Anuraag's Blog</h1>
+	  <img src="tulip.jpg">
+      <h4>Student at Fergusson college<h4>
+	  
+		
+    </header>
+		
+		
+		
+		
+    <article>
+	  <h1>Introduction</h1>
+      <p id='firstline'>
+		Hoolllaa people!!! Welcome to my blog.
+        This is where i present my college projects, and all the curriculum
+        related activities.
+      </p>
+
+      
+
+      <p>
+        We have recently been told to make 3
+        projects, 2 projects worth 4 credits and 1 research project which must
+        be published which is worth 6 credits. Adding to this work the college
+        has introduced 3 subjects which has to be completed before you pass 1st
+        year, and 4th semester has been alloted for strictly internship purpose.
+        During the internship term we need to complete 3 extra subject to
+        complete our degree.
+      </p>
+
+      <p>
+        Coming 6 months will be quite hectic for
+        us, I'll keep you guys updated if i am in mood to update y'all, till
+        then keep following my blog! Hastala-Vista!!
+      </p>
+    </article>
+
+    <aside>
+        <h3>Projects:-</h3>
+        <ol type="1">
+          <li>Web page development using HTML, CSS, JS</li>
+          <li>Some project using C++</li>
+          <li>App development using FLUTTER</li>
+          <li>Stock trends prediction</li>
+        </ol>
+      </aside>
+	
+	
+		
+    <footer>
+      <p>Copyrights given to Anuraag Vijaykumar</p>
+      <p>Email:-anuraagvijaykumar20@gmail.com</p>
+      Click here for <a href="https://www.google.com/">Google</a>
+    </footer>
+	
+
+  </body>
+</html>

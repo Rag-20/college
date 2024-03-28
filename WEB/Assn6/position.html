@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+
+
+.a{
+position:relative;
+border: 2px solid red;
+width:100%;
+height:200px
+}
+.absolute{
+	position:absolute;
+	border: 2px solid red;
+		right:0px;
+	width:50%;
+	height:50px;
+	}
+
+.static{
+	position:static;
+	border: 2px solid red;
+	}
+	
+.relative{
+	width:30%;
+	position:relative;
+	border: 2px solid red;
+	top:30px;
+	right:10px;
+	}
+	
+.fixed{
+	position:fixed;
+	border: 2px solid red;
+	width:20%;
+	bottom:10px;
+	right:10px;
+	}
+	
+.sticky{
+	position:sticky;
+	border: 2px solid red;
+	width:10%;
+	background-color:yellow;
+	top:0px;
+	
+	}
+	
+</style>
+<body>
+
+<div class="relative">
+<span>this is relative(aligns to its normal positiontop:30px;
+	right:10px;)</span>
+</div>
+<br><br>
+<div class="fixed">
+<p>this is fixed(aligns according to viewport)</p>
+</div>
+<div class="static">
+<p>this is static(normal html flow)</p>
+</div>
+
+<br><br>
+
+<div class="a">
+hello absolute
+<div class="absolute">
+this is absolute(positioned according to its nearest element
+</div>
+</div>
+
+
+
+
+<br><br><br>
+<div class="sticky">
+<span>this is sticky(sticks to the position m,entioned whhen scrolled)</span>
+</div>
+
+<p>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br>heloooo<br><br></p>
+</body>

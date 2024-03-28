@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td{
+border: 1px solid black;
+text-align: left;
+}
+
+
+td{
+overflow-wrap:break-word;
+}
+
+table{
+table-layout:fixed;
+width:500px;
+empty-cells:show;
+border-collapse:collapse;}
+
+tr:hover {
+color:red;
+}
+tr:hover td[rowspan='2']{
+color:red;
+}
+tr:nth-child(even){
+	background-color:lightgrey;
+}
+
+tr:nth-child(odd){
+	background-color:lightblue;
+}
+
+caption{
+border:2px solid black;
+}
+</style>
+<table>
+<caption>CITIZEN</caption>
+<tr>
+<th>Country</th>
+<th>State</th>
+<th>City</th>
+<th>Street</th>
+<th>Male</th>
+<th>Female</th>
+<th>Others</th>
+</tr>
+
+<tr>
+<td id="a" rowspan="8" align="center">1</td>
+<td id="b" rowspan="4" align="center">Kerala</td>
+<td class="a" rowspan="2" align="center">Cochin</td>
+<td>New street</td>
+<td>500</td>
+<td>600</td>
+<td>6</td>
+<tr>
+<td>Main street</td>
+<td>300</td>
+<td>288</td>
+<td>2</td>
+</tr>
+<td class="a" rowspan="2" align="center">Trivandrum</td>
+<td>Guru street</td>
+<td>500</td>
+<td>600</td>
+<td>10</td>
+<tr>
+<td>TVK street</td>
+<td>500</td>
+<td>600</td>
+<td>2</td>
+</tr>
+
+<td class="c" rowspan="4" align="center">Maharashtra</td>
+<td class="a" rowspan="2" align="center">Mumbai</td>
+<td>Krishna street</td>
+<td>700</td>
+<td>850</td>
+<td>1</td>
+<tr>
+<td>Main street</td>
+<td>500</td>
+<td>600</td>
+<td></td>
+</tr>
+<td class="a" rowspan="2" align="center">Surath</td>
+<td>Billa street</td>
+<td>500</td>
+<td>600</td>
+<td>2</td>
+<tr>
+<td>New street</td>
+<td>500</td>
+<td>600</td>
+<td>4</td>
+</tr>
+
+</tr>
+</tr>
+<td class="c" rowspan="2" align="center">2</td>
+<td rowspan="2" align="center">Alaska</td>
+<td class="a" rowspan="2" align="center">AKA control</td>
+<td>New street</td>
+<td>200</td>
+<td>210</td>
+<td>2</td>
+<tr>
+<td>Cross street</td>
+<td>1000</td>
+<td>1050</td>
+<td>10</td>
+</tr>
+
+
+</html>
