@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="a"></h1>
+</body>
+
+<script>
+time = new Date()
+hr = time.getHours();
+mins = time.getMinutes();
+sec = time.getSeconds();
+
+if(hr<10){
+    hr = "0" + hr;
+}
+if(mins<10){
+    mins = "0" + mins;
+}
+if(sec<10){
+    sec = "0"+sec;
+}
+
+curr_time = "Current time (24 hrs format): " + hr + ":"  
+                + mins + ":" 
+                + sec;
+ document.getElementById("a").innerHTML = curr_time;
+console.log(arr);
+</script>
+
+</html>

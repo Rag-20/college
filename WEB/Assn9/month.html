@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="a"></h1>
+</body>
+
+<script>
+months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+time = new Date();
+n = time.getMonth();
+str1 = months[n];
+curr_month = "Current month is " + str1;
+
+document.getElementById("a").innerHTML = curr_month;
+</script>
+
+</html>

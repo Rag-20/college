@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<p id="a"></p>
+<h1 id="a"></h1>
 </body>
 
 <script>
@@ -9,7 +9,11 @@ let arr1 = ["I","will","be"];
 let arr2 = ["23","next","year."];
 
 arr = arr1.concat(arr2);
- document.getElementById("a").innerHTML = arr;
+str1="";
+for(i in arr){
+str1 += " "+arr[i];
+}
+ document.getElementById("a").innerHTML = str1;
 console.log(arr);
 </script>
 
