@@ -21,10 +21,10 @@ g1=csv.writer(g,delimiter=',')
 f1=csv.writer(f,delimiter=',')
 
 for i in data.keys():
-    f1.writerow(i)
+    f1.writerow([i])
 
 for i in data.values():
-    g1.writerow(i)
+    g1.writerow([i])
 
 g.close()
 f.close()
