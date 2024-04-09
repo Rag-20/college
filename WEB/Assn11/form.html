@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container mt-3 bg-warning" style="border: 2px solid">
+      <h1>Form using bootstrap</h1>
+
+      <form action="#" class="was-validated">
+        <div class="form-floating mb-2 mt-2">
+          <input
+            id="fname"
+            type="text"
+            class="form-control"
+            placeholder="Enter your first name"
+            required
+          />
+          <label for="fname">First Name:</label>
+
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <label for="Mname" class="form-label mt-2">Middle Name:</label>
+        <input
+          id="Mname"
+          type="text"
+          class="form-control"
+          placeholder="Enter your Middle name"
+        />
+
+        <label for="Lname" class="form-label mt-2">Last Name:</label>
+        <input
+          id="Lname"
+          type="text"
+          class="form-control"
+          placeholder="Enter your Last name"
+        />
+
+        
+        <label for="date" class="form-label mb-2 mt-2">Birth Date:</label>
+        <div class="form-control">
+        <input id="date" type="date" class="form-control" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <label class="form-label mt-2">Gender:</label>
+        <div class="form-check">
+          <label for="male" class="form-check-label">Male</label>
+          <input
+            id="male"
+            name="gender"
+            type="radio"
+            class="form-check-input"
+          />
+        </div>
+
+        <div class="form-check mt-2">
+          <label for="female" class="form-check-label">Female</label>
+          <input
+            id="female"
+            name="gender"
+            type="radio"
+            class="form-check-input"
+          />
+        </div>
+
+        <div class="form-check mt-2">
+          <label for="others" class="form-check-label">Others</label>
+          <input
+            id="others"
+            name="gender"
+            type="radio"
+            class="form-check-input"
+          />
+        </div>
+
+        <label for="Add" class="form-label mt-2">Address:</label>
+        <input
+          id="Add"
+          type="textarea"
+          class="form-control"
+          placeholder="Enter your Address"
+        />
+
+        <label for="exp" class="form-label mt-2">Experience:</label>
+        <select class="form-select">
+          <option selected>Select experience</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="more">MOre than Three</option>
+        </select>
+
+        <label for="skills" class="form-label mt-2">Skill Set:</label>
+        <select multiple class="form-select" id="skills2">
+          <option>DS</option>
+          <option>IMCA</option>
+          <option>CS</option>
+          <option>CA</option>
+        </select>
+
+        <label class="form-label mt-2">Hobbies:</label>
+        <div class="form-check mt-2">
+          <label for="sing" class="form-check-label">Singing</label>
+          <input
+            id="sing"
+            name="Singing"
+            type="checkbox"
+            class="form-check-input"
+          />
+        </div>
+
+        <div class="form-check mt-2">
+          <label for="fsp" class="form-check-label">Sports</label>
+          <input
+            id="sp"
+            name="sport"
+            type="checkbox"
+            class="form-check-input"
+          />
+        </div>
+
+        <div class="form-check mt-2">
+          <label for="Dn" class="form-check-label">Dance</label>
+          <input
+            id="Dn"
+            name="dance"
+            type="checkbox"
+            class="form-check-input"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
